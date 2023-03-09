@@ -4,22 +4,178 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Paradigm Pet Professionals</title>
+    <title>Paradigm Pet Professionals | Home</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!--Header (Navbar)-->
+    <header id="header">
+        <div class="header-logo">
+            <a href="index.html">
+                <img src="images/Logo1.png" alt="Company Logo">
+            </a>
+        </div>
+
+        <navbar id="navbar">
+            <ul class="nav-list">
+                <li class="nav-list-item">
+                    <a href="index.html">Home</a>
+                </li>
+                <li class="nav-list-item">
+                    <a href="dogs.html">Dogs</a>
+                </li>
+                <li class="nav-list-item">
+                    <a href="cats.html">Cats</a>
+                </li>
+                <li class="nav-list-item">
+                    <a href="fish.html">Fish</a>
+                </li>
+            </ul>
+
+            <div class="search-bar">
+                <input type="search" placeholder="Search">
+            </div>
+            
+            <button class="nav-button">Ask a Pro</button>
+        </navbar>
+    </header>
 
     <!--Hero Section (Title and Background Image)-->
+    <section id="hero">
+        <h1 class="title">PARADIGM PET PROFESSIONALS</h1>
+
+        <h3 class="slogan">
+            Evidence-based pet care advice for every pet lover
+        </h3>
+
+        <p class="hero-text">
+            Paradigm Pet Professionals has 12 years' experience working with pet owners, certifications in pet health and nutrition, and customer recognition for outstanding support
+        </p>
+
+        <p class="hero-text">
+            Virtual consultations and presentations, one-on-one consultations concerning individual pets, group presentations regarding general pet care (can be tailored to the needs of the group)
+        </p>
+    </section>
 
     <!--Information Section (Two Subsections with Images and Text)-->
+    <section class="info-section">
+        <div class="info-image">
+            <img src="images/Cat4.jpg" alt="Cat and bird in grass">
+        </div>
 
-    <!--Resources Section (Aside section Next to Information Section)-->
+        <p class="info-section-text">
+            Pets are nature's gift to humanity. It has been scientifically proven that opening our homes and hearts to a pet increases our longevity and improves our overall quality of life as well as the lives of our pets. At Pet Paradigm Professionals, our mission is to offer resources to help you care for your furry, scaly, feathery, and slimy loved ones. Our pet experts—or “Pexperts”—have been working with pet owners and professionals alike for the past twelve years. They offer one-on-one consultations with current and prospective pet owners as well as group presentations designed for veterinary, pet shelter, and pet breeding professionals.
+        </p>
+
+        <p class="info-section-text">
+            Looking for basic pet care advice for the most common type of pets? Need additional help determining which type of pet is right for you and your family? We will work with you and provide tailored evidence-based pet care to ensure lifelong health and wellness of your new companion.
+        </p>
+
+        <div class="info-image">
+            <img src="images/Meeting2.jpg" alt="Meeting between two people">
+        </div>
+    </section>
+
+    <!--Resources Section-->
+    <section class="resources">
+        <div class="logo2">
+            <img src="images/Logo2.png" alt="Second Company Logo">
+        </div>
+
+        <p class="resources-text-one">
+            Looking for your new best friend? The following organizations can help you find and adopt the perfect companion:
+        </p>
+
+        <ul class="resources-list">
+            <li class="resources-list-item">
+                <div class="resources-list-icon">
+                    icon
+                </div>
+                <a href="https://theshelterpetproject.org/" target="_blank">
+                    General Adoption Resources
+                </a>
+            </li>
+            <li class="resources-list-item">
+                <div class="resources-list-icon">
+                    icon
+                </div>
+                <a href="https://www.aspca.org/ " target="_blank">
+                    ASPCA
+                </a>
+            </li>
+            <li class="resources-list-item">
+                <div class="resources-list-icon">
+                    icon
+                </div>
+                <a href="https://www.sterlingshelter.org/humane-society/koi-fish-rescue/" target="_blank">
+                    Fish Rescue
+                </a>
+            </li>
+            <li class="resources-list-item">
+                <div class="resources-list-icon">
+                    icon
+                </div>
+                <a href="https://savethesnakes.org/snakerescuecall/" target="_blank">
+                    Snake Rescue
+                </a>
+            </li>
+            <li class="resources-list-item">
+                <div class="resources-list-icon">
+                    icon
+                </div>
+                <a href="https://ftlob.rescuegroups.org/" target="_blank">
+                    Bird Rescue
+                </a>
+            </li>
+        </ul>
+    </section>
 
     <!--Animal Info Links with Images-->
+    <section class="animal-info">
+        <div class="animal-card">
+            <img src="images/Dog2.jpg" alt="Dog Picture 1">
+            <p class="animal-card-title">
+                Dogs
+            </p>
+        </div>
+
+        <div class="animal-card">
+            <img src="images/Cat1.jpg" alt="Dog Picture 1">
+            <p class="animal-card-title">
+                Cats
+            </p>
+        </div>
+
+        <div class="animal-card">
+            <img src="images/Fish1.jpg" alt="Dog Picture 1">
+            <p class="animal-card-title">
+                Fish
+            </p>
+        </div>
+    </section>
 
     <!--Consultation Form-->
+    <form action="/" id="request-form" method="POST">
+        <h1 class="form-header">
+            Consult with a "Pexpert"
+        </h1>
 
+        <div class="your-info-container">
+            <h3>Your Information</h3>
+
+            <label for="name">Name</label>
+            <input type="text" name="name" required>
+
+            <label for="phone">Phone Number</label>
+            <input type="tel" name="phone" required>
+
+            <label for="email">Email Address</label>
+            <input type="email" name="email" required>
+
+            <label for="timezone">Time Zone</label>
+            <input type="text" name="timezone">
+        </div>
+    </form>
     <!--Footer with Sitemap-->
 
 
