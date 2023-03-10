@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Paradigm Pet Professionals | Home</title>
     <script src="https://kit.fontawesome.com/8c203a5a10.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -33,11 +34,26 @@
                 </li>
             </ul>
 
-            <div class="search-bar">
-                <input type="search" placeholder="Search">
-            </div>
-            
-            <button class="nav-button">Ask a Pro</button>
+            <form 
+                action="/"
+                class="form-search">
+                <input 
+                    class="search-bar" 
+                    name="search" 
+                    type="search" 
+                    placeholder="Search">
+                    <button 
+                        class="search-icon" 
+                        type="submit" 
+                        name="search">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+            </form>
+            <input 
+                class="nav-button" 
+                type="submit" 
+                value="Ask A Pro"
+                onclick="location.href='#request-form'">
         </navbar>
     </header>
 
@@ -89,43 +105,38 @@
 
         <ul class="resources-list">
             <li class="resources-list-item">
-                <div class="resources-list-icon">
-                    <i class="fa-solid fa-paw"></i>
-                </div>
+                <i class="fa-solid fa-paw"></i>
+                General Adoption Resources:
                 <a href="https://theshelterpetproject.org/" target="_blank">
-                    General Adoption Resources
+                    https://theshelterpetproject.org/
                 </a>
             </li>
             <li class="resources-list-item">
-                <div class="resources-list-icon">
-                    <i class="fa-solid fa-cat"></i>
-                </div>
-                <a href="https://www.aspca.org/ " target="_blank">
-                    ASPCA
+                <i class="fa-solid fa-cat"></i>
+                ASPCA:
+                <a href="https://www.aspca.org/" target="_blank">
+                    https://www.aspca.org/
                 </a>
             </li>
             <li class="resources-list-item">
-                <div class="resources-list-icon">
-                    <i class="fa-solid fa-fish"></i>
-                </div>
+                <i class="fa-solid fa-fish"></i>
+                Fish Rescue:
                 <a href="https://www.sterlingshelter.org/humane-society/koi-fish-rescue/" target="_blank">
-                    Fish Rescue
+                    https://www.sterlingshelter.org/humane-society/koi-fish-rescue/
                 </a>
             </li>
             <li class="resources-list-item">
-                <div class="resources-list-icon">
-                    <i class="fa-solid fa-staff-snake"></i>
-                </div>
+                <i class="fa-solid fa-staff-snake"></i>
+                Snake Rescue:
                 <a href="https://savethesnakes.org/snakerescuecall/" target="_blank">
-                    Snake Rescue
+                    https://savethesnakes.org/snakerescuecall/
                 </a>
             </li>
             <li class="resources-list-item">
-                <div class="resources-list-icon">
-                    <i class="fa-solid fa-crow"></i>
-                </div>
+                <i class="fa-solid fa-crow"></i>
+                Bird Rescue:
                 <a href="https://ftlob.rescuegroups.org/" target="_blank">
-                    Bird Rescue
+                    https://ftlob.rescuegroups.org/
                 </a>
             </li>
         </ul>
