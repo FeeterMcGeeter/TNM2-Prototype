@@ -24,6 +24,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     line-height: 1.5;
     background-color: #F8F9FA;
+    height: 100%;
 }
 
 a {
@@ -133,13 +134,77 @@ header {
 
 /*Title Section*/
 #hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     color: #FFF;
-    min-height: 60vh;
+    height: 60%;
     background: linear-gradient(
         rgba(0, 0, 0, .6),
         rgba(0, 0, 0, .6)),
         url('./images/Meeting1.jpg')
         center no-repeat;
     background-size: cover;
+}
+
+.hero-title {
+    grid-column: 1 / 3;
+    margin-top: 3rem;
+    padding: 4rem 0;
+    font-size: 5rem;
+    letter-spacing: .2rem;
+}
+
+.hero-slogan {
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+    align-self: flex-start;
+    margin-top: 1rem;
+    font-size: 2.5rem;
+}
+
+.hero-company-info,
+.hero-services {
+    grid-row: 3 / 4;
+    align-self: flex-end;
+    padding: 0 10rem;
+    font-size: 1.7rem;
+    font-weight: 700;
+}
+
+/*Information Section #1*/
+.info-section {
+    margin: 5rem 5rem 2.5rem 5rem;
+    display: flex;
+}
+
+.info-section p,
+.info-section-2 p {
+    font-size: 1.6rem;
+}
+
+.info-section .info-image {
+    margin-right: 3rem;
+}
+
+.info-image img {
+    width: 45rem;
+    height: 30rem;
+}
+
+.info-section-text {
+    align-self: center;
+    margin-right: 3rem;
+}
+
+.info-section-2 {
+    margin: 2.5rem 5rem 5rem 5rem;
+    display: flex;
+}
+
+.info-section-2, .info-section-text {
+    text-align: right;
 }
