@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Paradigm Pet Professionals | Home</title>
+    <script src="https://kit.fontawesome.com/8c203a5a10.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -89,7 +90,7 @@
         <ul class="resources-list">
             <li class="resources-list-item">
                 <div class="resources-list-icon">
-                    icon
+                    <i class="fa-solid fa-paw"></i>
                 </div>
                 <a href="https://theshelterpetproject.org/" target="_blank">
                     General Adoption Resources
@@ -97,7 +98,7 @@
             </li>
             <li class="resources-list-item">
                 <div class="resources-list-icon">
-                    icon
+                    <i class="fa-solid fa-cat"></i>
                 </div>
                 <a href="https://www.aspca.org/ " target="_blank">
                     ASPCA
@@ -105,7 +106,7 @@
             </li>
             <li class="resources-list-item">
                 <div class="resources-list-icon">
-                    icon
+                    <i class="fa-solid fa-fish"></i>
                 </div>
                 <a href="https://www.sterlingshelter.org/humane-society/koi-fish-rescue/" target="_blank">
                     Fish Rescue
@@ -113,7 +114,7 @@
             </li>
             <li class="resources-list-item">
                 <div class="resources-list-icon">
-                    icon
+                    <i class="fa-solid fa-staff-snake"></i>
                 </div>
                 <a href="https://savethesnakes.org/snakerescuecall/" target="_blank">
                     Snake Rescue
@@ -121,7 +122,7 @@
             </li>
             <li class="resources-list-item">
                 <div class="resources-list-icon">
-                    icon
+                    <i class="fa-solid fa-crow"></i>
                 </div>
                 <a href="https://ftlob.rescuegroups.org/" target="_blank">
                     Bird Rescue
@@ -175,9 +176,53 @@
             <label for="timezone">Time Zone</label>
             <input type="text" name="timezone">
         </div>
+
+        <div class="pet-info-container">
+            <h3>Pet Information</h3>
+
+            <label for="name">Name</label>
+            <input type="text" name="name" required>
+
+            <label for="type">Type</label>
+            <input type="text" name="type" required>
+
+            <label for="age">Age</label>
+            <input type="number" name="age" required>
+        </div>
+
+        <div class="form-submit">
+            <button id="submit" type="submit">Request a Consultation</button>
+        </div>
     </form>
+
     <!--Footer with Sitemap-->
+    <footer id="footer">
+        <div class="back-to-top">
+            <i class="fa-solid fa-heart"></i><br>
+            <i class="fa-solid fa-chevron-up"></i>
+        </div>
+        <navbar class="footer-nav">
+            <h4>Sitemap</h4>
+            <ul id="sitemap">
+                <li class="sitemap-list">
+                    <a href="index.html" class="sitemap-list-link">Home</a>
+                </li>
+                <li class="sitemap-list">
+                    <a href="dogs.html" class="sitemap-list-link">Dogs</a>
+                </li>
+                <li class="sitemap-list">
+                    <a href="cats.html" class="sitemap-list-link">Cats</a>
+                </li>
+                <li class="sitemap-list">
+                    <a href="fish.html" class="sitemap-list-link">Fish</a>
+                </li>
+            </ul>
+        </navbar>
 
-
+        <div class="footer-logo">
+            <img src="images/Logo1.png" alt="Company Logo">
+        </div>
+        <p class="copyright">&copy; Paradigm Pet Professionals</p>
+    </footer>
 </body>
 </html>
