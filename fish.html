@@ -34,12 +34,26 @@
                 </li>
             </ul>
 
-            <div class="search-bar">
-                <input type="search" placeholder="Search">
-                <i class="fa-solid fa-magnifying-glass"></i>
-            </div>
-            
-            <button class="nav-button">Ask a Pro</button>
+            <form 
+                action="/"
+                class="form-search">
+                <input 
+                    class="search-bar" 
+                    name="search" 
+                    type="search" 
+                    placeholder="Search">
+                    <button 
+                        class="search-icon" 
+                        type="submit" 
+                        name="search">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+            </form>
+            <input 
+                class="nav-button" 
+                type="submit" 
+                value="Request a Call"
+                onclick="location.href='index.html#request-form'">
         </navbar>
     </header>
 
@@ -111,12 +125,17 @@
     <!--Footer with Sitemap-->
     <footer id="footer">
         <div class="back-to-top">
-            <i class="fa-solid fa-heart"></i><br>
-            <i class="fa-solid fa-chevron-up"></i>
+            <a class="back-to-top-link" href="#header">
+                <i class="fa-solid fa-heart"></i>
+                <i class="fa-solid fa-chevron-up"></i>
+            </a>
         </div>
+
+        <p class="back-to-top-text">Back to Top</p>
+
         <navbar class="footer-nav">
             <h4>Sitemap</h4>
-            <ul id="sitemap">
+            <ul class="footer-sitemap">
                 <li class="sitemap-list">
                     <a href="index.html" class="sitemap-list-link">Home</a>
                 </li>
@@ -127,7 +146,7 @@
                     <a href="cats.html" class="sitemap-list-link">Cats</a>
                 </li>
                 <li class="sitemap-list">
-                    <a href="fish.html" class="sitemap-list-link">Fish</a>
+                    <a href="#header" class="sitemap-list-link">Fish</a>
                 </li>
             </ul>
         </navbar>
@@ -135,7 +154,11 @@
         <div class="footer-logo">
             <img src="images/Logo1.png" alt="Company Logo">
         </div>
-        <p class="copyright">&copy; Paradigm Pet Professionals</p>
+        
+        <div class="footer-copyright">
+            <p class="footer-copyright-company">&copy; Paradigm Pet Professionals</p>
+            <p class="footer-copyright-designer">Powered by Synesthor</p>
+        </div>
     </footer>
 </body>
 </html>
