@@ -629,15 +629,18 @@ header {
     margin-bottom: var(--mg-bottom-sm);
 }
 
+.container-section a:hover {
+    color: var(--color-secondary);
+}
+
 .container-image {
     margin-right: 3rem;
-    /* width: 45rem;
-    height: 35rem; */
 }
 
 .container-image img {
-    /* width: 100%;
-    height: 100%; */
+    object-fit: cover;
+    -webkit-box-shadow: -.9rem 1.2rem 1.5rem -.6rem var(--color-dark); 
+    box-shadow: -.9rem 1.2rem 1.5rem -.6rem var(--color-dark);
 }
 
 .container-info-title {
@@ -647,6 +650,16 @@ header {
     margin-bottom: 1rem;
 }
 
+.container-list {
+    margin-top: 1rem;
+}
+
+.container-list-item i {
+    margin: 0 .5rem;
+    color: var(--color-primary-light);
+}
+
+/*===== FISH CONTENT NEXT TO IMAGE =====*/
 .first-fish-info {
     margin-bottom: var(--mg-bottom-sm);
 }
