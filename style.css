@@ -23,16 +23,6 @@ Silver - #BDBDBD*/
     --edge: 5rem;
 }
 
-/*========== BORDER ANIMATION ON HOVER FOR NAV LINKS ==========*/
-@keyframes border_animation {
-    0% {
-        width: 0%;
-    }
-    100% {
-        width: 100%;
-    }
-}
-
 /*========== GLOBAL STYLING ==========*/
 *,
 *::before,
@@ -609,6 +599,17 @@ header {
     color: var(--color-light);
     background-color: var(--color-primary);
     border-radius: 1rem;
+
+}
+
+.form-submit button:hover {
+    cursor: pointer;
+    opacity: .8;
+    transition: .3s;
+}
+
+.form-submit:active {
+    transform: translateY(.4rem);
 }
 
 /*========== DOGS, CATS, & FISH PAGES ==========*/
