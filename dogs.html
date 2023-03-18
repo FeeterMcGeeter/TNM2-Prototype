@@ -11,51 +11,77 @@
 </head>
 <body>
     <!--Header and Navigation-->
-    <header id="header" class="secondary-page-header">
-        <div class="header-logo">
-            <a href="index.html">
+    <nav class="nav" id="nav">
+        <div class="nav__logo">
+            <a 
+                href="index.html" 
+                class="nav__logo-link" 
+                title="Company Logo">
                 <img src="images/Logo1.png" alt="Company Logo">
             </a>
         </div>
 
-        <navbar id="navbar">
-            <ul class="nav-list">
-                <li class="nav-list-item">
-                    <a class="nav-link" href="index.html">Home</a>
-                </li>
-                <li class="nav-list-item">
-                    <a class="nav-link" href="dogs.html">Dogs</a>
-                </li>
-                <li class="nav-list-item">
-                    <a class="nav-link" href="cats.html">Cats</a>
-                </li>
-                <li class="nav-list-item">
-                    <a class="nav-link" href="fish.html">Fish</a>
-                </li>
-            </ul>
+        <div class="nav__spacer"></div>
 
-            <form 
-                action="/"
-                class="form-search">
-                <input 
-                    class="search-bar" 
-                    name="search" 
-                    type="search" 
-                    placeholder="Search">
-                    <button 
-                        class="search-icon" 
-                        type="submit" 
-                        name="search">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                    </button>
-            </form>
+        <ul class="nav__list" id="nav__list">
+            <li class="nav__list-item">
+                <a href="index.html" class="nav__list-link">
+                    Home
+                </a>
+            </li>
+            <li class="nav__list-item">
+                <a href="dogs.html" class="nav__list-link">
+                    Dogs
+                </a>
+            </li>
+            <li class="nav__list-item">
+                <a href="cats.html" class="nav__list-link">
+                    Cats
+                </a>
+            </li>
+            <li class="nav__list-item">
+                <a href="fish.html" class="nav__list-link">
+                    Fish
+                </a>
+            </li>
+        </ul>
+
+        <form 
+            action="/" 
+            class="nav__search" 
+            id="nav__search">
             <input 
-                class="nav-button" 
+                class="nav__search-bar"
+                type="search"
+                name="search"
+                placeholder="Search"
+            >
+            <button
+                class="nav__search-icon" 
                 type="submit" 
-                value="Request a Call"
-                onclick="location.href='index.html#request-form'">
-        </navbar>
-    </header>
+                name="search"
+            >
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </form>
+
+        <input 
+            type="button"
+            class="nav__cta-button"
+            id="cta-button"
+            value="Ask a Pro"
+            onclick="location.href='index.html#request-form'"
+        >
+
+        <!-- <input 
+            type="checkbox" 
+            class="header__side-menu"
+            id="hamburger-menu"
+        >
+        <label class="hamburger-menu" for="hamburger-menu">
+            <span class="hamburger-line"></span>
+        </label> -->
+    </nav>
 
     <!--Main Content-->
     <div class="container">
@@ -107,40 +133,40 @@
 
     <!--Footer with Sitemap-->
     <footer id="footer">
-        <div class="back-to-top">
-            <a class="back-to-top-link" href="#header">
+        <div class="footer__back-to-top">
+            <a class="back-to-top__link" href="#nav">
                 <i class="fa-solid fa-heart"></i>
                 <i class="fa-solid fa-chevron-up"></i>
             </a>
         </div>
 
-        <p class="back-to-top-text">Back to Top</p>
+        <p class="back-to-top__text">Back to Top</p>
 
-        <navbar class="footer-nav">
-            <h4>Sitemap</h4>
-            <ul class="footer-sitemap">
-                <li class="sitemap-list">
-                    <a href="index.html" class="sitemap-list-link">Home</a>
+        <fieldset class="footer__sitemap">
+            <legend class="footer__sitemap-header">Sitemap</legend>
+            <ul class="footer__sitemap-list">
+                <li class="sitemap-list__item">
+                    <a href="index.html" class="sitemap__link">Home</a>
                 </li>
-                <li class="sitemap-list">
-                    <a href="#header" class="sitemap-list-link">Dogs</a>
+                <li class="sitemap-list__item">
+                    <a href="#nav" class="sitemap__link">Dogs</a>
                 </li>
-                <li class="sitemap-list">
-                    <a href="cats.html" class="sitemap-list-link">Cats</a>
+                <li class="sitemap-list__item">
+                    <a href="cats.html" class="sitemap__link">Cats</a>
                 </li>
-                <li class="sitemap-list">
-                    <a href="fish.html" class="sitemap-list-link">Fish</a>
+                <li class="sitemap-list__item">
+                    <a href="fish.html" class="sitemap__link">Fish</a>
                 </li>
             </ul>
-        </navbar>
+        </fieldset>
 
-        <div class="footer-logo">
+        <div class="footer__logo" title="Company Logo">
             <img src="images/Logo1.png" alt="Company Logo">
         </div>
-        
-        <div class="footer-copyright">
-            <p class="footer-copyright-company">&copy; Paradigm Pet Professionals</p>
-            <p class="footer-copyright-designer">Powered by Synesthor</p>
+
+        <div class="footer__copyright">
+            <p class="footer__copyright-company">&copy; Paradigm Pet Professionals</p>
+            <p class="footer__copyright-designer">Powered by Synesthor</p>
         </div>
     </footer>
 

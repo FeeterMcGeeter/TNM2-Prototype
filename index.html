@@ -11,132 +11,158 @@
 </head>
 <body>
     <!--Header (Navbar)-->
-    <header id="header">
-        <div class="header-logo">
-            <a class="header-logo-link" href="index.html" title="Company Logo">
+    <nav class="nav" id="nav">
+        <div class="nav__logo">
+            <a 
+                href="#nav" 
+                class="nav__logo-link" 
+                title="Company Logo">
                 <img src="images/Logo1.png" alt="Company Logo">
             </a>
         </div>
 
-        <navbar id="navbar">
-            <ul class="nav-list">
-                <li class="nav-list-item">
-                    <a class="nav-link" href="index.html">Home</a>
-                </li>
-                <li class="nav-list-item">
-                    <a class="nav-link" href="dogs.html">Dogs</a>
-                </li>
-                <li class="nav-list-item">
-                    <a class="nav-link" href="cats.html">Cats</a>
-                </li>
-                <li class="nav-list-item">
-                    <a class="nav-link" href="fish.html">Fish</a>
-                </li>
-            </ul>
+        <div class="nav__spacer"></div>
 
-            <form 
-                action="/"
-                class="form-search">
-                <input 
-                    class="search-bar" 
-                    name="search" 
-                    type="search" 
-                    placeholder="Search">
-                    <button 
-                        class="search-icon" 
-                        type="submit" 
-                        name="search">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                    </button>
-            </form>
+        <ul class="nav__list" id="nav__list">
+            <li class="nav__list-item">
+                <a href="index.html" class="nav__list-link">
+                    Home
+                </a>
+            </li>
+            <li class="nav__list-item">
+                <a href="dogs.html" class="nav__list-link">
+                    Dogs
+                </a>
+            </li>
+            <li class="nav__list-item">
+                <a href="cats.html" class="nav__list-link">
+                    Cats
+                </a>
+            </li>
+            <li class="nav__list-item">
+                <a href="fish.html" class="nav__list-link">
+                    Fish
+                </a>
+            </li>
+        </ul>
+
+        <form 
+            action="/" 
+            class="nav__search" 
+            id="nav__search">
             <input 
-                class="nav-button" 
+                class="nav__search-bar"
+                type="search"
+                name="search"
+                placeholder="Search"
+            >
+            <button
+                class="nav__search-icon" 
                 type="submit" 
-                value="Request a Call"
-                onclick="location.href='#request-form'">
-        </navbar>
-    </header>
+                name="search"
+            >
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </form>
 
-    <!--Hero Section (Title and Background Image)-->
-    <section id="hero" class="mg-bottom-lg" title="Company Meeting">
-        <h1 class="hero-title">PARADIGM PET PROFESSIONALS</h1>
+        <input 
+            type="button"
+            class="nav__cta-button"
+            id="cta-button"
+            value="Ask a Pro"
+            onclick="location.href='#request-form'"
+        >
 
-        <h3 class="hero-slogan">
+        <!-- Hamburger Nav Menu on Mobile -->
+        <div class="nav__hamburger">
+            <span class="nav__hamburger-line"></span>
+            <span class="nav__hamburger-line"></span>
+            <span class="nav__hamburger-line"></span>
+        </div>
+    </nav>
+
+    <!--Hero Section (Home Title Section)-->
+    <section id="hero" class="mg-bottom__lg" title="Company Meeting">
+        <h1 class="hero__title">PARADIGM PET PROFESSIONALS</h1>
+
+        <h3 class="hero__slogan">
             Evidence-based pet care advice for every pet lover
         </h3>
 
-        <p class="hero-company-info">
+        <p class="hero__company-info">
             Paradigm Pet Professionals has 12 years' experience working with pet owners, certifications in pet health and nutrition, and customer recognition for outstanding support
-        </p>
-
-        <p class="hero-services">
-            Virtual consultations and presentations, one-on-one consultations concerning individual pets, group presentations regarding general pet care (can be tailored to the needs of the group)
         </p>
     </section>
 
     <!--Information Section (Three Subsections with Images and Text)-->
-    <main class="container-home mg-bottom-lg">
-        <section class="info-section mg-bottom-mid">
-            <div class="info-image image-left" title="Cat and bird in grass">
+    <main class="home__main-container mg-bottom__lg">
+        <section class="home__info-section mg-bottom__med">
+            <div class="home__info-image image-left" title="Cat and bird in grass">
                 <img src="images/Cat4.jpg" alt="Cat and bird in grass">
             </div>
 
-            <p class="info-section-text">
+            <p class="home__info-text">
                 Pets are nature's gift to humanity. It has been scientifically proven that opening our homes and hearts to a pet increases our longevity and improves our overall quality of life as well as the lives of our pets. At Pet Paradigm Professionals, our mission is to offer resources to help you care for your furry, scaly, feathery, and slimy loved ones. Our pet experts—or “Pexperts”—have been working with pet owners and professionals alike for the past twelve years. They offer one-on-one consultations with current and prospective pet owners as well as group presentations designed for veterinary, pet shelter, and pet breeding professionals.
             </p>
         </section>
 
-        <section class="info-section-2 mg-bottom-mid">
-            <p class="info-section-text">
-                Looking for basic pet care advice for the most common type of pets? Need additional help determining which type of pet is right for you and your family? We will work with you and provide tailored evidence-based pet care to ensure lifelong health and wellness of your new companion.
-            </p>
-
-            <div class="info-image" title="Meeting between two people">
+        <section class="home__info-section-2 mg-bottom__med">
+            <div class="home__info-2-container">
+                <p class="home__info-text home__p1">
+                    Looking for basic pet care advice for the most common type of pets? Need additional help determining which type of pet is right for you and your family? We will work with you and provide tailored evidence-based pet care to ensure lifelong health and wellness of your new companion.
+                </p>
+    
+                <p class="home__info-text">
+                    Virtual consultations and presentations, one-on-one consultations concerning individual pets, group presentations regarding general pet care (can be tailored to the needs of the group)
+                </p>
+            </div>
+            
+            <div class="home__info-image" title="Meeting between two people">
                 <img src="images/Meeting2.jpg" alt="Meeting between two people">
             </div>
         </section>
 
         <!--Resources Section-->
-        <section class="resources mg-bottom-lg">
-            <div class="resources-image image-left" title="Secondary Company Logo">
+        <section class="home__resources mg-bottom__lg">
+            <div class="home__resources-image image-left" title="Secondary Company Logo">
                 <img src="images/Cat5.jpg" alt="Second Company Logo">
             </div>
 
-            <div class="resources-content">
-                <p class="resources-text">
+            <div class="home__resources-content">
+                <p class="home__resources-text">
                     Looking for your new best friend? The following organizations can help you find and adopt the perfect companion:
                 </p>
 
-                <ul class="resources-list">
-                    <li class="resources-list-item">
+                <ul class="home__resources-list">
+                    <li class="resources__list-item">
                         <i class="fa-solid fa-star"></i>
                         General Adoption Resources:
                         <a href="https://theshelterpetproject.org/" target="_blank">
                             https://theshelterpetproject.org/
                         </a>
                     </li>
-                    <li class="resources-list-item">
+                    <li class="resources__list-item">
                         <i class="fa-solid fa-star"></i>
                         ASPCA:
                         <a href="https://www.aspca.org/" target="_blank">
                             https://www.aspca.org/
                         </a>
                     </li>
-                    <li class="resources-list-item">
+                    <li class="resources__list-item">
                         <i class="fa-solid fa-star"></i>
                         Fish Rescue:
                         <a href="https://www.sterlingshelter.org/humane-society/koi-fish-rescue/" target="_blank">
                             https://www.sterlingshelter.org/humane-society/koi-fish-rescue/
                         </a>
                     </li>
-                    <li class="resources-list-item">
+                    <li class="resources__list-item">
                         <i class="fa-solid fa-star"></i>
                         Snake Rescue:
                         <a href="https://savethesnakes.org/snakerescuecall/" target="_blank">
                             https://savethesnakes.org/snakerescuecall/
                         </a>
                     </li>
-                    <li class="resources-list-item">
+                    <li class="resources__list-item">
                         <i class="fa-solid fa-star"></i>
                         Bird Rescue:
                         <a href="https://ftlob.rescuegroups.org/" target="_blank">
@@ -145,53 +171,53 @@
                     </li>
                 </ul>
 
-                <p class="resources-text">
+                <p class="home__resources-text">
                     We are also happy to help you navigate the adoption process! We will guide you through each step in the process from determining which type of pet is best suited for your family and home environment, to completing the necessary paperwork, to bringing your new loved one home. Please fill out our contact form to request a consultation. We will contact you within 48 hours to schedule a consultation. All fields are required.
                 </p>
             </div>
         </section>
 
         <!--Animal Info Links with Images-->
-        <section class="animal-info mg-bottom-lg">
-            <div class="animal-card" title="Dog carrying stick">
-                <div class="image-box">
-                    <img class="card-image-one" src="images/Dog2.jpg" alt="Dog carrying stick">
+        <section class="home__animal-info mg-bottom__lg">
+            <div class="home__animal-card" title="Dog carrying stick">
+                <div class="card__image-box">
+                    <img class="card__image-one" src="images/Dog2.jpg" alt="Dog carrying stick">
                 </div>
-                <div class="animal-card-content">
-                    <h3 class="animal-card-title">
+                <div class="card__content">
+                    <h3 class="card__title">
                         Dogs
                     </h3>
-                    <p class="card-content-info">
+                    <p class="card__content-info">
                         Information on care for your pet
                     </p>
                     <a href="dogs.html">Read More</a>
                 </div>
             </div>
 
-            <div class="animal-card" title="Cat on couch">
-                <div class="image-box">
-                    <img class="card-image-two" src="images/Cat1.jpg" alt="Cat on couch">
+            <div class="home__animal-card" title="Cat on couch">
+                <div class="card__image-box">
+                    <img class="card__image-two" src="images/Cat1.jpg" alt="Cat on couch">
                 </div>
-                <div class="animal-card-content">
-                    <h3 class="animal-card-title">
+                <div class="card__content">
+                    <h3 class="card__title">
                         Cats
                     </h3>
-                    <p class="card-content-info">
+                    <p class="card__content-info">
                         Information on care for your pet
                     </p>
                     <a href="cats.html">Read More</a>
                 </div>
             </div>
 
-            <div class="animal-card" title="Blue fish">
-                <div class="image-box">
+            <div class="home__animal-card" title="Blue fish">
+                <div class="card__image-box">
                     <img class="card-image-three" src="images/Fish2.jpg" alt="Blue fish">
                 </div>
-                <div class="animal-card-content">
-                    <h3 class="animal-card-title">
+                <div class="card__content">
+                    <h3 class="card__title">
                         Fish
                     </h3>
-                    <p class="card-content-info">
+                    <p class="card__content-info">
                         Information on care for your pet
                     </p>
                     <a href="fish.html">Read More</a>
@@ -204,18 +230,18 @@
             id="request-form" 
             action="/" 
             method="POST">
-            <h2 class="form-header">
+            <h2 class="form__header">
                 Consult with a "Pexpert"
             </h2>
 
-            <div class="form-info-container your-container">
+            <div class="form__info-container your-container">
                 <h3>Your Information</h3>
 
                 <label for="name">Name</label>
                 <input type="text" name="name" required>
 
-                <label for="phone">Phone Number (XXX-XXX-XXXX)</label>
-                <input type="tel" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                <label for="phone">Phone Number (<span>must include area code</span>)</label>
+                <input type="tel" name="phone" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" required>
 
                 <label for="email">Email Address</label>
                 <input type="email" name="email" required>
@@ -224,7 +250,7 @@
                 <input type="text" name="timezone">
             </div>
 
-            <div class="form-info-container pet-info-container">
+            <div class="form__info-container pet-info-container">
                 <h3>Pet Information</h3>
 
                 <label for="name">Name</label>
@@ -237,7 +263,7 @@
                 <input type="number" name="age" required>
             </div>
 
-            <div class="form-submit">
+            <div class="form__submit">
                 <button id="submit" type="submit">Request a Consultation</button>
             </div>
         </form>
@@ -245,40 +271,40 @@
 
     <!--Footer with Sitemap-->
     <footer id="footer">
-        <div class="back-to-top">
-            <a class="back-to-top-link" href="#header">
+        <div class="footer__back-to-top">
+            <a class="back-to-top__link" href="#nav">
                 <i class="fa-solid fa-heart"></i>
                 <i class="fa-solid fa-chevron-up"></i>
             </a>
         </div>
 
-        <p class="back-to-top-text">Back to Top</p>
+        <p class="back-to-top__text">Back to Top</p>
 
-        <navbar class="footer-nav">
-            <h4>Sitemap</h4>
-            <ul class="footer-sitemap">
-                <li class="sitemap-list">
-                    <a href="#header" class="sitemap-list-link">Home</a>
+        <fieldset class="footer__sitemap">
+            <legend class="footer__sitemap-header">Sitemap</legend>
+            <ul class="footer__sitemap-list">
+                <li class="sitemap-list__item">
+                    <a href="#nav" class="sitemap__link">Home</a>
                 </li>
-                <li class="sitemap-list">
-                    <a href="dogs.html" class="sitemap-list-link">Dogs</a>
+                <li class="sitemap-list__item">
+                    <a href="dogs.html" class="sitemap__link">Dogs</a>
                 </li>
-                <li class="sitemap-list">
-                    <a href="cats.html" class="sitemap-list-link">Cats</a>
+                <li class="sitemap-list__item">
+                    <a href="cats.html" class="sitemap__link">Cats</a>
                 </li>
-                <li class="sitemap-list">
-                    <a href="fish.html" class="sitemap-list-link">Fish</a>
+                <li class="sitemap-list__item">
+                    <a href="fish.html" class="sitemap__link">Fish</a>
                 </li>
             </ul>
-        </navbar>
+        </fieldset>
 
-        <div class="footer-logo" title="Company Logo">
+        <div class="footer__logo" title="Company Logo">
             <img src="images/Logo1.png" alt="Company Logo">
         </div>
 
-        <div class="footer-copyright">
-            <p class="footer-copyright-company">&copy; Paradigm Pet Professionals</p>
-            <p class="footer-copyright-designer">Powered by Synesthor</p>
+        <div class="footer__copyright">
+            <p class="footer__copyright-company">&copy; Paradigm Pet Professionals</p>
+            <p class="footer__copyright-designer">Powered by Synesthor</p>
         </div>
     </footer>
 
