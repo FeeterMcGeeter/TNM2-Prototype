@@ -880,6 +880,11 @@ hr {
                 inset -.3rem -.3rem .6rem var(--color-light);
 }
 
+/*== REMOVING THE UP/DOWN ARROWS ON THE AGE INPUT FIELD ==*/
+input[type="number"]::-webkit-inner-spin-button {
+    display: none;
+}
+
 .form__submit {
     display: grid;
     place-items: center;
@@ -941,11 +946,6 @@ hr {
 .container__section a:hover {
     color: var(--color-secondary);
     border-bottom: .1rem solid var(--color-secondary);
-}
-
-.container__sub-section span {
-    color: var(--color-dark);
-    font-weight: 700;
 }
 
 .container__info-title {
