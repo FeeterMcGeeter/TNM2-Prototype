@@ -29,16 +29,19 @@
                     Home
                 </a>
             </li>
+
             <li class="nav__list-item">
                 <a href="dogs.html" class="nav__list-link">
                     Dogs
                 </a>
             </li>
+
             <li class="nav__list-item">
                 <a href="cats.html" class="nav__list-link">
                     Cats
                 </a>
             </li>
+
             <li class="nav__list-item">
                 <a href="fish.html" class="nav__list-link">
                     Fish
@@ -92,41 +95,63 @@
         <p class="hero__company-info">
             Paradigm Pet Professionals has 12 years' experience working with pet owners, certifications in pet health and nutrition, and customer recognition for outstanding support
         </p>
+
+        <input 
+            type="button"
+            class="hero__cta-button"
+            id="cta-button"
+            value="Ask a Pro"
+            onclick="location.href='#request-form'"
+        >
     </section>
 
     <!--Information Section (Three Subsections with Images and Text)-->
-    <main class="home__main-container mg-bottom__lg">
-        <section class="home__info-section mg-bottom__med">
-            <div class="home__info-image image-left" title="Cat and bird in grass">
-                <img src="images/Cat4.jpg" alt="Cat and bird in grass">
-            </div>
+    <main class="home__main-container">
+        <section class="home__info-section">
+
+            <img 
+                src="images/Cat4.jpg" 
+                alt="Cat and bird in grass" 
+                title="Cat and bird in grass"
+                class="home__info-image image-one"
+            >
 
             <p class="home__info-text">
-                Pets are nature's gift to humanity. It has been scientifically proven that opening our homes and hearts to a pet increases our longevity and improves our overall quality of life as well as the lives of our pets. At Pet Paradigm Professionals, our mission is to offer resources to help you care for your furry, scaly, feathery, and slimy loved ones. Our pet experts—or “Pexperts”—have been working with pet owners and professionals alike for the past twelve years. They offer one-on-one consultations with current and prospective pet owners as well as group presentations designed for veterinary, pet shelter, and pet breeding professionals.
+                <span>Pets</span> are nature's gift to humanity. It has been scientifically proven that opening our homes and hearts to a pet increases our longevity and improves our overall quality of life as well as the lives of our pets. At Pet Paradigm Professionals, our mission is to offer resources to help you care for your furry, scaly, feathery, and slimy loved ones. Our pet experts—or “Pexperts”—have been working with pet owners and professionals alike for the past twelve years. They offer one-on-one consultations with current and prospective pet owners as well as group presentations designed for veterinary, pet shelter, and pet breeding professionals.
             </p>
         </section>
 
-        <section class="home__info-section-2 mg-bottom__med">
-            <div class="home__info-2-container">
-                <p class="home__info-text home__p1">
+        <section class="home__info-section">
+            <div class="home__info-sub-section">
+                <p class="home__info-text">
                     Looking for basic pet care advice for the most common type of pets? Need additional help determining which type of pet is right for you and your family? We will work with you and provide tailored evidence-based pet care to ensure lifelong health and wellness of your new companion.
                 </p>
-    
+
+                <br>
+
                 <p class="home__info-text">
                     Virtual consultations and presentations, one-on-one consultations concerning individual pets, group presentations regarding general pet care (can be tailored to the needs of the group)
                 </p>
             </div>
-            
-            <div class="home__info-image" title="Meeting between two people">
-                <img src="images/Meeting2.jpg" alt="Meeting between two people">
-            </div>
+
+            <img 
+                src="images/Meeting2.jpg" 
+                alt="Meeting between two people"
+                title="Meeting between two people" 
+                class="home__info-image image-two"
+            >
         </section>
 
+        <hr>
+
         <!--Resources Section-->
-        <section class="home__resources mg-bottom__lg">
-            <div class="home__resources-image image-left" title="Secondary Company Logo">
-                <img src="images/Cat5.jpg" alt="Second Company Logo">
-            </div>
+        <section class="home__resources">
+            <img 
+                src="images/Cat5.jpg" 
+                alt="Cat in cage"
+                title="Cat in cage" 
+                class="home__resources-image"
+            >
 
             <div class="home__resources-content">
                 <p class="home__resources-text">
@@ -141,6 +166,7 @@
                             https://theshelterpetproject.org/
                         </a>
                     </li>
+
                     <li class="resources__list-item">
                         <i class="fa-solid fa-star"></i>
                         ASPCA:
@@ -148,6 +174,7 @@
                             https://www.aspca.org/
                         </a>
                     </li>
+
                     <li class="resources__list-item">
                         <i class="fa-solid fa-star"></i>
                         Fish Rescue:
@@ -155,6 +182,7 @@
                             https://www.sterlingshelter.org/humane-society/koi-fish-rescue/
                         </a>
                     </li>
+
                     <li class="resources__list-item">
                         <i class="fa-solid fa-star"></i>
                         Snake Rescue:
@@ -162,6 +190,7 @@
                             https://savethesnakes.org/snakerescuecall/
                         </a>
                     </li>
+
                     <li class="resources__list-item">
                         <i class="fa-solid fa-star"></i>
                         Bird Rescue:
@@ -177,51 +206,117 @@
             </div>
         </section>
 
-        <!--Animal Info Links with Images-->
-        <section class="home__animal-info mg-bottom__lg">
+        <!--Animal Info Desktop Section-->
+        <section class="home__animal-desktop">
             <div class="home__animal-card" title="Dog carrying stick">
                 <div class="card__image-box">
-                    <img class="card__image-one" src="images/Dog2.jpg" alt="Dog carrying stick">
+                    <img 
+                        class="card__image-one" 
+                        src="images/Dog2.jpg" 
+                        alt="Dog carrying stick"
+                    >
                 </div>
+
                 <div class="card__content">
-                    <h3 class="card__title">
-                        Dogs
-                    </h3>
+                    <h3 class="card__title">Dogs</h3>
+
                     <p class="card__content-info">
                         Information on care for your pet
                     </p>
+
                     <a href="dogs.html">Read More</a>
                 </div>
             </div>
 
             <div class="home__animal-card" title="Cat on couch">
                 <div class="card__image-box">
-                    <img class="card__image-two" src="images/Cat1.jpg" alt="Cat on couch">
+                    <img 
+                        class="card__image-two" 
+                        src="images/Cat1.jpg" 
+                        alt="Cat on couch"
+                    >
                 </div>
+
                 <div class="card__content">
-                    <h3 class="card__title">
-                        Cats
-                    </h3>
+                    <h3 class="card__title">Cats</h3>
+
                     <p class="card__content-info">
                         Information on care for your pet
                     </p>
+
                     <a href="cats.html">Read More</a>
                 </div>
             </div>
 
             <div class="home__animal-card" title="Blue fish">
                 <div class="card__image-box">
-                    <img class="card-image-three" src="images/Fish2.jpg" alt="Blue fish">
+                    <img 
+                        class="card-image-three" 
+                        src="images/Fish2.jpg" 
+                        alt="Blue fish"
+                    >
                 </div>
+
                 <div class="card__content">
-                    <h3 class="card__title">
-                        Fish
-                    </h3>
+                    <h3 class="card__title">Fish</h3>
+
                     <p class="card__content-info">
                         Information on care for your pet
                     </p>
+
                     <a href="fish.html">Read More</a>
                 </div>
+            </div>
+        </section>
+
+        <!--Animal Info Mobile Section-->
+        <section class="home__animal-mobile">
+            <div class="animal-mobile__card">
+                <img 
+                    class="mobile__card-image" 
+                    src="images/Dog2.jpg" 
+                    alt="Dog carrying stick"
+                >
+
+                <h3 class="mobile__card-title">Dogs</h3>
+
+                <p class="mobile__card-text">
+                    Information on care for your pet
+                </p>
+
+                <a class="mobile__card-link" href="dogs.html">Read More</a>
+            </div>
+
+            <div class="animal-mobile__card">
+                <img 
+                    class="mobile__card-image" 
+                    src="images/Cat1.jpg" 
+                    alt="Cat on couch"
+                >
+
+                <h3 class="mobile__card-title">Cats</h3>
+
+                <p class="mobile__card-text">
+                    Information on care for your pet
+                </p>
+
+                <a class="mobile__card-link" href="cats.html">Read More</a>
+            </div>
+
+            <div class="animal-mobile__card">
+                <img 
+                    class="mobile__card-image" 
+                    src="images/Fish2.jpg" 
+                    alt="Blue fish"
+                >
+
+                <h3 class="mobile__card-title">Fish</h3>
+
+                <p class="mobile__card-text">
+                    Information on care for your pet
+                </p>
+
+                <a class="mobile__card-link" href="fish.html">Read More</a>
             </div>
         </section>
 
@@ -309,5 +404,18 @@
     </footer>
 
     <script src="app.js"></script>
+    <script>
+        // FORM SUBMISSION AND RESETTING ON CLICK
+        const formToReset = document.getElementById("request-form");
+        formToReset.addEventListener("submit", (e) => {
+            e.preventDefault();
+            formToReset.reset();
+            alertUser();
+        });
+
+        function alertUser() {
+            alert("Submission Successful");
+        }
+    </script>
 </body>
 </html>

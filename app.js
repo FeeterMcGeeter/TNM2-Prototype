@@ -10,18 +10,6 @@ function setActive() {
 
 window.onload = setActive;
 
-// FORM SUBMISSION AND RESETTING ON CLICK
-const formToReset = document.getElementById("request-form");
-formToReset.addEventListener("submit", (e) => {
-    e.preventDefault();
-    formToReset.reset();
-    alertUser();
-});
-
-function alertUser() {
-    alert("Submission Successful");
-}
-
 // HAMBURGER MENU FOR RESPONSIVE NAVBAR
 const burgerMenu = document.querySelector(".nav__hamburger");
 const navList = document.querySelector("#nav__list");
@@ -35,7 +23,7 @@ burgerMenu.addEventListener("click", () => {
 document.querySelectorAll(".nav__list-link").forEach(n => n.addEventListener("click", () => {
 burgerMenu.classList.remove("current");
 navList.classList.remove("current");
-}))
+}));
 
 // NEED TO MAKE THE PAGES MORE RESPONSIVE 
 // TRY TO ADD FUNCTIONALITY TO THE SEARCH BAR
