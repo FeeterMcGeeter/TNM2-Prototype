@@ -11,10 +11,10 @@
 </head>
 <body>
     <!--Header (Navbar)-->
-    <nav class="nav" id="nav">
+    <nav class="nav secondary-page-header" id="nav">
         <div class="nav__logo">
             <a 
-                href="index.html" 
+                href="#nav" 
                 class="nav__logo-link" 
                 title="Company Logo">
                 <img src="images/Logo1.png" alt="Company Logo">
@@ -29,18 +29,21 @@
                     Home
                 </a>
             </li>
+
             <li class="nav__list-item">
                 <a href="dogs.html" class="nav__list-link">
                     Dogs
                 </a>
             </li>
+
             <li class="nav__list-item">
                 <a href="cats.html" class="nav__list-link">
                     Cats
                 </a>
             </li>
+
             <li class="nav__list-item">
-                <a href="#nav" class="nav__list-link">
+                <a href="fish.html" class="nav__list-link">
                     Fish
                 </a>
             </li>
@@ -70,7 +73,7 @@
             class="nav__cta-button"
             id="cta-button"
             value="Ask a Pro"
-            onclick="location.href='index.html#request-form'"
+            onclick="location.href='#request-form'"
         >
 
         <!-- Hamburger Nav Menu on Mobile -->
@@ -83,92 +86,95 @@
 
     <!--Main Content-->
     <div class="container">
-        <section class="container-section image-section">
-            <div class="container-image" title="Fish in bowl">
-                <img  src="images/Fish1.jpg" alt="Fish in bowl">
-            </div>
+        <section class="container__section image-section">
+            <img 
+                class="container__image"
+                src="images/Fish1.jpg" 
+                alt="Fish in bowl"
+                title="Fish in bowl"
+            >
 
-            <section class="container-sub-section">
-                <p class="container-info first-fish-info">
-                    Fish represent a broad class of aquatic animals that can live in fresh or saltwater, depending on the species. Bringing fish into your home can be an exciting hobby, especially if you intend to breed them, and the presence of a fish tank in your home can induce feelings of peace and tranquility.
-                </p>
+            <section class="container__sub-section">
+                <p class="container__info first-fish-info">
+                    <span>Fish</span> represent a broad class of aquatic animals that can live in fresh or saltwater, depending on the species. Bringing fish into your home can be an exciting hobby, especially if you intend to breed them, and the presence of a fish tank in your home can induce feelings of peace and tranquility.
+                </span>
         
-                <p class="container-info">
-                    Whether you are bringing your fish home for the first time or maintaining your aquarium, it is important to test your water <span>once per week</span> to ensure it is free from toxins that can harm your fish.
+                <p class="container__info">
+                    Whether you are bringing your fish home for the first time or maintaining your aquarium, it is important to test your water <b>once per week</b> to ensure it is free from toxins that can harm your fish.
                 </p>
             </section>
         </section>
 
-        <section class="container-section">
-            <p class="container-info-title">Freshwater Fish</p>
+        <section class="container__section">
+            <p class="container__info-title">Freshwater Fish</p>
 
-            <p class="container-info">
+            <p class="container__info">
                 There are several freshwater fish to choose from when setting up your aquarium, but it is best to consult with a “Pexpert” to ensure your fish will get along! No matter the species, ensure your fish are suited for a freshwater environment by investing in a water testing kit. Follow these general water chemistry guidelines to ensure your fish will adapt well to your aquarium and avoid ingesting toxins that can harm or kill your fish:
             </p>
 
-            <ul class="container-list">
-                <li class="container-list-item">
+            <ul class="container__list">
+                <li class="container__list-item">
                     <i class="fa-solid fa-fish"></i>
                     pH Level: 6/8-7.6 (7.0 is considered neutral)
                 </li>
-                <li class="container-list-item">
+                <li class="container__list-item">
                     <i class="fa-solid fa-fish"></i>
                     Ammonia: any level above zero is harmful to fish
                 </li>
-                <li class="container-list-item">
+                <li class="container__list-item">
                     <i class="fa-solid fa-fish"></i>
                     Nitrates: 5 to 10 ppm
                 </li>
-                <li class="container-list-item">
+                <li class="container__list-item">
                     <i class="fa-solid fa-fish"></i>
                     Nitrites: less than 0.5 ppm
                 </li>
             </ul>
         </section>
 
-        <section class="container-section">
-            <p class="container-info-title">Saltwater Fish</p>
+        <section class="container__section">
+            <p class="container__info-title">Saltwater Fish</p>
 
-            <p class="container-info">
+            <p class="container__info">
                 Saltwater fish also offer several options when it comes to choosing among species for your aquarium. As with freshwater fish, consult with a “Pexpert” to ensure your fish will get along are suited for a saltwater environment. Following these general guidelines to avoid dangerous water conditions and ensure the appropriate salinity level for your fishies:
             </p>
 
-            <ul class="container-list">
-                <li class="container-list-item">
+            <ul class="container__list">
+                <li class="container__list-item">
                     <i class="fa-solid fa-fish"></i>
                     Salinity: 1.020-1.028 sg
                 </li>
-                <li class="container-list-item">
+                <li class="container__list-item">
                     <i class="fa-solid fa-fish"></i>
                     pH Level: 7.6-8.4 (7.0 is considered neutral)
                 </li>
-                <li class="container-list-item">
+                <li class="container__list-item">
                     <i class="fa-solid fa-fish"></i>
                     Ammonia: any level above 0.1 ppm requires attention
                 </li>
-                <li class="container-list-item">
+                <li class="container__list-item">
                     <i class="fa-solid fa-fish"></i>
                     Nitrates: 10 to 40 ppm
                 </li>
-                <li class="container-list-item">
+                <li class="container__list-item">
                     <i class="fa-solid fa-fish"></i>
                     Nitrites: less than 0.2 ppm
                 </li>
             </ul>
         </section>
 
-        <section class="container-section">
-            <p class="container-info">
+        <section class="container__section">
+            <p class="container__info">
                 For more information on making your tap water safe for your fish, please visit:
             </p>
 
-            <p class="container-info">
+            <p class="container__info">
                 <a href="http://www.theaquariumwiki.org/wiki/       How_to_make_tap_water_safe_for_fish" target="_blank">
                 http://www.theaquariumwiki.org/wiki/How_to_make_tap_water_safe_for_fish
                 </a>
             </p>
 
-            <p class="container-info">
+            <p class="container__info">
                 <a href="http://fishbase.org/home.htm" target="_blank">
                 http://fishbase.org/home.htm
                 </a>
@@ -216,5 +222,18 @@
     </footer>
 
     <script src="app.js"></script>
+    <script>
+        // FORM SUBMISSION AND RESETTING ON CLICK
+        const formToReset = document.getElementById("request-form");
+        formToReset.addEventListener("submit", (e) => {
+            e.preventDefault();
+            formToReset.reset();
+            alertUser();
+        });
+
+        function alertUser() {
+            alert("Submission Successful");
+        }
+    </script>
 </body>
 </html>

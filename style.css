@@ -99,6 +99,7 @@ li {
 
 .nav__list .nav__list-item {
     padding: 2rem 0;
+    margin-right: 2rem;
 }
 
 .nav__list-link {
@@ -910,64 +911,61 @@ hr {
 .secondary-page-header {
     margin-bottom: var(--mg-bottom-med);
 }
+
 .container {
     width: min(80%, 120rem);
     margin: 0 auto var(--mg-bottom-med) auto;
     font-size: var(--default-font-size);
 }
 
-.container-section {
-    padding: 0 1rem;
-}
-
 .image-section {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-gap: 2rem;
+    display: flex;
+    flex-wrap: no-wrap;
+    gap: 2rem;
 
-    margin-bottom: var(--mg-bottom-med) !important;
+    margin-bottom: var(--mg-bottom-med);
 }
 
-.container-section:not(:last-of-type) {
-    margin-bottom: var(--mg-bottom-sm);
-}
-
-.container-section a:hover {
-    color: var(--color-secondary);
-    border-bottom: .1rem solid var(--color-secondary);
-}
-
-.container-info:first-of-type {
-    justify-self: center;
-    align-self: center;
-
-    padding: 1rem;
-}
-
-.container-image {
-    max-height: 32rem;
-}
-
-.container-image img {
-    width: 40rem;
-    height: 100%;
+.container__image {
+    min-width: 40%;
+    max-height: 30rem;
     object-fit: cover;
     -webkit-box-shadow: -.9rem 1.2rem 1.5rem -.6rem var(--color-dark); 
     box-shadow: -.9rem 1.2rem 1.5rem -.6rem var(--color-dark);
 }
 
-.container-info-title {
+.container__section:not(:last-of-type) {
+    margin-bottom: var(--mg-bottom-sm);
+}
+
+.container__section a:hover {
+    color: var(--color-secondary);
+    border-bottom: .1rem solid var(--color-secondary);
+}
+
+.container__sub-section span {
+    color: var(--color-dark);
+    font-weight: 700;
+}
+
+.container__info-title {
     color: var(--color-primary-light);
     font-size: 2rem;
     font-weight: 500;
     margin-bottom: 1rem;
 }
 
-.container-list {
+.container__info span {
+    color: var(--color-primary-light);
+    font-weight: 500;
+    font-size: 1.8rem;
+}
+
+.container__list {
     margin-top: 1rem;
 }
 
-.container-list-item i {
+.container__list-item i {
     margin: 0 .5rem;
     color: var(--color-primary-light);
 }
@@ -984,4 +982,25 @@ hr {
 
 .container-info span {
     font-weight: 700;
+}
+
+@media screen and (max-width: 48rem) {
+    .image-section {
+        flex-wrap: wrap;
+        display: grid;
+    }
+
+    .container__image {
+        justify-self: center;
+    }
+}
+
+@media screen and (max-width: 30rem) {
+    .image-section {
+        display: flex;
+    }
+
+    .container__image {
+        flex-grow: 1;
+    }
 }
